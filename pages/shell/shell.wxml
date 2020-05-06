@@ -1,0 +1,6 @@
+<view class="usermotto carDesc carDesc1">
+	<!-- <button class="user-motto share">{{motto}}</button> -->
+	<button class='share user-motto' id="shareBtn" open-type="share" hover-class="other-button-hover">
+		{{motto}}
+	</button>
+</view>

@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="headInformation">
+    <image class="headPic" src="{{userInfo.avatarUrl}}"></image>
+    <view class="userInfo">
+      <text class="nickName" >{{userInfo.nickName}}</text>
+      <text class="city" >城市： {{userInfo.city}}</text>
+      <text class="province">省份：{{userInfo.province}}</text>
+    </view>
+  </view>
+    <view class="my-list">
+      <navigator class="my-item" url="../score/score">
+        <image src="../../iconall/watch1.png" mode="aspectFit"></image>
+        <text>积分查看</text>
+      </navigator>
+      <navigator class="my-item" url="../wallet/wallet">
+        <image src="../../iconall/wallet.png" mode="aspectFit"></image>
+        <text>我的钱包</text>
+      </navigator>
+      <navigator class="my-item" url="../message/message">
+        <image src="../../iconall/trashit.png" mode="aspectFit"></image>
+        <text>我的垃圾量</text>
+      </navigator>
+      <navigator class="my-item" url="../message/message">
+        <image src="../../iconall/applyit.png" mode="aspectFit"></image>
+        <text>垃圾桶申请</text>
+      </navigator>
+    </view>
+	<view>
+		<button class="denglu" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+	</view>
+  </view>

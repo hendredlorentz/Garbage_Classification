@@ -1,0 +1,27 @@
+<view class="main">
+	<view class="name">
+		<scroll-view scroll-y="true" class="pagebody" bindscrolltolower="loadmore">
+			<view class="list">
+				<view class="my-item" url="../message/message" bindtap="again">
+					<image src="../../iconall/可回收物.png" mode="aspectFit"></image>
+					<text>可回收物</text>
+				</view>
+				<view class="my-item" url="../message/message" bindtap="danger">
+					<image src="../../iconall/有害垃圾.png" mode="aspectFit"></image>
+					<text>有害垃圾</text>
+				</view>
+				<view class="my-item" url="../message/message" bindtap="wet">
+					<image src="../../iconall/湿垃圾.png" mode="aspectFit"></image>
+					<text>湿垃圾</text>
+				</view>
+				<view class="my-item" url="../message/message" bindtap="dry">
+					<image src="../../iconall/干垃圾.png" mode="aspectFit"></image>
+					<text>干垃圾</text>
+				</view>
+			</view>
+			<view>
+
+			</view>
+		</scroll-view>
+	</view>
+</view>

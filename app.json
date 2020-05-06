@@ -1,0 +1,57 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/photothing/photothing",
+		"pages/person/person",
+		"pages/list/list",
+		"pages/register/register",
+		"pages/map/map",
+		"pages/login-in/login-in",
+		"pages/infogo/infogo",
+		"pages/aboutus/aboutus",
+		"pages/purcher/purcher",
+		"pages/shell/shell",
+		"pages/score/score",
+		"pages/wallet/wallet",
+		"pages/answer/answer"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#3a4861",
+		"backgroundColor": "#bcc0c9",
+		"navigationBarTitleText": "智能垃圾桶",
+		"navigationBarTextStyle": "white",
+		"enablePullDownRefresh": false
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "你的位置信息将用于小程序接口的效果显示"
+		}
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#444",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "主页",
+				"iconPath": "iconall/house.png",
+				"selectedIconPath": "iconall/house-active.png"
+			},
+			{
+				"pagePath": "pages/map/map",
+				"text": "地图",
+				"iconPath": "iconall/map-active.png",
+				"selectedIconPath": "iconall/map.png"
+			},
+			{
+				"pagePath": "pages/login-in/login-in",
+				"text": "个人中心",
+				"iconPath": "iconall/person.png",
+				"selectedIconPath": "iconall/person-active.png"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
+}

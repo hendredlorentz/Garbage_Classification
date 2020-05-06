@@ -1,0 +1,11 @@
+.share{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	font-size: 50rpx;
+	color: burlywood;
+	position: relative;
+	top: 100rpx;
+}

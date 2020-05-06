@@ -1,0 +1,65 @@
+<view class="main"> 
+	<view class="secondMain1">
+		<text class="head">请注意，选择只有一次，请细心作答</text>
+		<view class="questionMain">
+			<text>①.垃圾可以分为几类？</text>
+		</view>
+		<view class="options">
+			<radio-group class="radiogroup" bindchange="radioChange1">
+				<radio  class="radio" wx:for-items="{{items1}}" wx:key="name" disabled="{{radio1}}" value="{{item.name}}">
+					<text class="word">{{item.value}}</text>
+				</radio>
+			</radio-group>
+		</view>
+	</view>
+	<view class="secondMain">
+		<view class="questionMain">
+			<text>②.大块的骨头应归类到哪类垃圾？</text>
+		</view>
+		<view class="options">
+			<radio-group class="radiogroup" bindchange="radioChange2">
+				<radio  class="radio" wx:for="{{items2}}" wx:key="name" disabled="{{radio2}}" value="{{item.name}}">
+					<text class="word">{{item.value}}</text>
+				</radio>
+			</radio-group>
+		</view>
+	</view>
+	<view class="secondMain">
+		<view class="questionMain">
+			<text>③.哪种垃圾可以重新提炼出有用的材料？</text>
+		</view>
+		<view class="options">
+			<radio-group class="radiogroup" bindchange="radioChange3">
+				<radio  class="radio" wx:for="{{items3}}" wx:key="name" disabled="{{radio3}}" value="{{item.name}}">
+					<text class="word">{{item.value}}</text>
+				</radio>
+			</radio-group>
+		</view>
+	</view>
+	<view class="secondMain">
+		<view class="questionMain">
+			<text>④.厨余垃圾桶是什么颜色的？</text>
+		</view>
+		<view class="options">
+			<radio-group class="radiogroup" bindchange="radioChange4">
+				<radio  class="radio" wx:for="{{items4}}" wx:key="name" disabled="{{radio4}}" value="{{item.name}}">
+					<text class="word">{{item.value}}</text>
+				</radio>
+			</radio-group>
+		</view>
+	</view>
+	<view class="secondMain">
+		<view class="questionMain">
+			<text>⑤.擦鼻涕的纸应放入哪种垃圾桶中？</text>
+		</view>
+		<view class="options">
+			<radio-group class="radiogroup" bindchange="radioChange5">
+				<radio  class="radio" wx:for="{{items5}}" wx:key="name" disabled="{{radio5}}" value="{{item.name}}">
+					<text class="word">{{item.value}}</text>
+				</radio>
+			</radio-group>
+		</view>
+	</view>
+	<button class="button" type="primary" bindtap="clickit">提交</button>
+	<text class="last" wx:if="{{option}}">您的得分为:{{score}}分</text>
+</view>

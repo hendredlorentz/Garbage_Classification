@@ -1,0 +1,30 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+	<view class="username">
+		<view class="i">
+			手机号
+		</view>
+		<input id="username" type="number" maxlength="11" name="username" placeholder="请输入手机号码" value="{{username}}"></input>
+	</view>
+	<view class="password">
+		<view class="ii">
+			密码
+		</view>
+		<input id="password" type="password" name="password" placeholder="请输入密码" value="{{password}}"></input>
+	</view>
+	<view class="sex">
+		<view class="sex1" style="font-weight: bold;">性别</view>
+		<!-- <radio-group class="radioGroup">
+			<label>
+				<radio value="0" checked="checked">男</radio>
+				<radio value="1">女</radio>
+			</label>
+		</radio-group>
+
+	-->	
+	<input type="string" name="sexual" placeholder="请输入性别(男或女)" value="{{sexual}}" id="sexual"></input>
+</view>
+<view class="buton">
+	<button id="sub" type="primary" formType="submit">提交</button>
+	<button id="res" type="primary" formType="reset">重置</button>
+</view>
+</form>

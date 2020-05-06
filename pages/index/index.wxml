@@ -1,0 +1,54 @@
+<swiper class="slides" indicator-dots="true" autoplay="true" interval="3000" indicator-color="">
+  <navigator url="www.baidu.com">
+    <swiper-item>
+      <image src="/iconall/trash1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/iconall/trash2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/iconall/trash3.jpg" mode="aspectFill"> </image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/iconall/trash4.jpg" mode="aspectFill"></image>
+    </swiper-item>
+  </navigator>
+</swiper>
+<view class="grid">
+  <navigator class="item" url="/pages/photothing/photothing">
+    <image  src="/iconall/photovr.png"></image>
+    <text>智能识别</text>
+  </navigator>
+  <navigator class="item" url="/pages/list/list">
+    <image src="/iconall/searchmessage.png"></image>
+    <text>垃圾分类信息</text>
+  </navigator>
+  <navigator class="item" url="/pages/list/list">
+    <image src="/iconall/givehistory.png"></image>
+    <text>积分奖励</text>
+  </navigator>
+  <navigator class="item" url="/pages/infogo/infogo">
+    <image src="/iconall/message.png"></image>
+    <text>信息反馈</text>
+  </navigator>
+  <navigator class="item" url="/pages/aboutus/aboutus">
+    <image src="/iconall/aboatus.png"></image>
+    <text>关于我们</text>
+  </navigator>
+  <navigator class="item" url="/pages/purcher/purcher">
+    <image src="/iconall/buy.png"></image>
+    <text>商品购买</text>
+  </navigator>
+  <navigator class="item" url="/pages/answer/answer">
+    <image src="/iconall/study.png"></image>
+    <text>答题</text>
+  </navigator>
+  <navigator class="item" url="/pages/shell/shell">
+    <image src="/iconall/share.png"></image>
+    <text>分享</text>
+  </navigator>
+  <navigator class="item" url="/pages/list/list">
+    <image src="/iconall/addman.png"></image>
+    <text>添加好友</text>
+  </navigator>
+</view>

@@ -1,0 +1,16 @@
+#username,#password,#sexual{
+	background-color: #ffff;
+	height: 50rpx;
+	margin-bottom: 20rpx;
+	margin-top: 20rpx;
+}
+.i,.ii{
+	font-size: 40rpx;
+	font-weight: bold;
+}
+.buton{
+	margin-top: 150rpx;
+}
+#res{
+	margin-top: 20rpx;
+}

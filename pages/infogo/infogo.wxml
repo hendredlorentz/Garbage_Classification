@@ -1,0 +1,8 @@
+<view class="main">
+	<view class="name">
+		<view>
+			<text class="biaoti">如果有什么问题请点击下方按钮</text>
+		</view>
+	</view>
+	<button  type="primary" open-type="feedback" class="button">点击反馈</button>
+</view>

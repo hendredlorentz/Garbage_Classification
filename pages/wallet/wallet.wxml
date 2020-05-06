@@ -1,0 +1,24 @@
+<view class="user_content">
+  <!--表头-->
+  <view class="user_head">
+    <view class="user_img domain">
+      <view class="userinfo-avatar">账户余额</view>
+      <view class="userinfo_name">￥300.00</view>
+    </view>
+    <view class="user_img domain">
+      <view class="userinfo-avatar">押金</view>
+      <view class="userinfo_name">￥0.00</view>
+    </view>
+  </view>
+  <view class="user_edit_con">
+    <navigator wx:for="{{ items }}" wx:key="key1" url="{{ item.url}}">
+      <view class="user_edit_li">
+        <view class="user_edit_li_title">
+          <text class="{{ item.image }}" style="{{ item.color }}"></text>
+          <text class="fr grey">{{ item.text }}</text>
+          <text class="iconfont icon-jiantou"></text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

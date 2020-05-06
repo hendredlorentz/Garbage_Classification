@@ -1,0 +1,13 @@
+<view class="user_content">
+	<!--表头-->
+	<view class="user_head">
+		<view class="user_img domain">
+			<view class="userinfo-avatar">积分信息</view>
+			<view class="userinfo_name">{{jifen}}</view>
+		</view>
+		<view class="user_img domain">
+			<view class="userinfo-avatar">可兑换金额</view>
+			<view class="userinfo_name">￥{{money}}</view>
+		</view>
+	</view>
+</view>

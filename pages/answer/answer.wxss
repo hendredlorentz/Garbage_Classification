@@ -1,0 +1,34 @@
+.radiogroup{
+	 /* margin-left: 100rpx; */
+	  margin-left: 50rpx;
+}
+.questionMain{
+	font-size: 40rpx;
+	color: black;
+}
+.radio{
+	display: block;
+	margin-top: 40rpx;
+}
+.word{
+	margin-left: 10rpx;
+}
+.secondMain{
+	margin-top: 100rpx;
+}
+.button{
+	margin-top: 50rpx;
+	width: 200rpx;
+	height: 100rpx;
+}
+.last{
+	text-align: center;
+	color: red;
+	font-size: 40px;
+	display: block;
+}
+.head{
+	text-align: center;
+	color: black;
+	border: 2rpx solid red;
+}

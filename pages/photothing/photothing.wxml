@@ -1,0 +1,8 @@
+<view>
+	<view class="word">
+		点击下方扫一扫
+	</view>
+	<view class="scan">
+		<button type="primary" bindtap="open">扫一扫</button>
+	</view>
+</view>
