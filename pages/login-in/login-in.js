@@ -1,8 +1,8 @@
-
+const db = wx.cloud.database().collection("user")
 var app = getApp();
 
 Page({
-	
+
 	/**
 	 * 页面的初始数据
 	 */
@@ -18,7 +18,7 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function(options) {
-		
+
 		console.log(app.globalData.log)
 		console.log("onLoad:页面加载");
 		var that = this;
@@ -52,7 +52,28 @@ Page({
 					});
 					app.globalData.log = true;
 					console.log(app.globalData.log);
-					
+					wx.cloud.callFunction({
+						name: 'getopenid',
+						success(res) {
+							console.log("获取成功", res.result.openid)
+						},
+						fail(res){
+							console.log("获取失败",res);
+						}
+					})
+					db.add({
+						data: {
+							name: that.data.userInfo.nickName,
+							age: '18',
+							gender: that.data.userInfo.gender
+						},
+						success(res) {
+							console.log("添加成功", res);
+						},
+						fail(res) {
+							console.log("添加失败", res);
+						}
+					})
 				},
 				fail: () => {
 					console.log('获取用户数据失败');
@@ -68,6 +89,7 @@ Page({
 				confirmText: '返回授权',
 			})
 		}
+
 	},
 	//获取用户登录信息
 
